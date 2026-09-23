@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoRep</title>
+    <link rel="stylesheet" href="sytle.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="aside-nav">
+            <div class="logo">
+                <h1>MotoRep</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#idInicio" class="nav-link activo" data-section="inicio">
+                    <span>Inicio</span>
+                </a>
+                <a href="#idServices" class="nav-link" data-section="services">
+                    <span>Servicios</span>
+                </a>
+                <a href="#idProducts" class="nav-link" data-section="products">
+                    <span>productos</span>
+                </a>
+                <a href="#modalContactar" class="nav-link" onclick="abrirModal()"  >
+                    <span>Contáctenos</span>
+                </a>
+            </nav>
+           
+        </aside>
+
+    
+        <div class="container-main">
+            <main>
+                
+                <section class="inicio" id="idInicio" >
+                    <div class="overlay-bienvenido">
+                        <span class="txtBien">Bienvenido a moto repuesto Emanuel</span>
+                        <div class="linea">
+                            <span class="txtDescripcion">Tu taller de confianza para el mantenimiento y reparación de motocicletas.</span>
+                            <button class="btn-contactar" onclick="abrirModal()">Contáctenos</button>
+
+                        </div>
+
+                    </div>
+                    
+                </section>
+                <section class="services" id="idServices">
+                    <span class="txtServicios">Servicios</span>
+                    <div >
+                        <div class="targetasA">
+                            <div class="targeta">
+                                <span>Mantenimiento preventivo y correctivo</span>
+                            </div>
+                            <div class="targeta">
+                                <span>Reparación de motores y sistemas eléctricos</span>
+                            </div>
+                            <div class="targeta">
+                                <span>Cambio de aceite y filtros</span>
+                            </div>
+
+                        </div>
+
+                        <div class="targetasA">
+                            <div class="targeta">
+                                <span>Alineación y balanceo de ruedas</span>
+                            </div>
+                            <div class="targeta">
+                                <span>Instalación de accesorios y repuestos</span>
+                            </div>
+                            <div class="targeta">
+                                <span>Ajustes de freno</span>
+                            </div>
+
+                        </div>
+
+                        
+                    </div>
+                    
+                    
+
+                </section>
+                <section class="products" id="idProducts">
+                    <span class="txtServicios">Productos</span>
+                    <div >
+                        <div class="targetasA">
+                            
+                            <div class="targeta">
+                                <div ><img src="./recursos de images/cablesParaMoto.jpg" alt="imagen" class="imgProducto"></div>
+                                <span>cable</span>
+                            </div>
+                            <div class="targeta">
+                                <div ><img src="./recursos de images/cadena.png" alt="imagen" class="imgProducto"></div>
+                                <span>Cadena y Sprocket</span>
+                            </div>
+                            <div class="targeta">
+                               <div ><img src="./recursos de images/pastillasDeFreno.jpg" alt="imagen" class="imgProducto"></div>
+                                <span>Pastillas de frenos y Fricciones</span>
+                            </div>
+
+                        </div>
+
+                        <div class="targetasA">
+                            <div class="targeta">
+                                <div ><img src="./recursos de images/Aceites.jpg" alt="imagen" class="imgProducto"></div>
+                                <span>Aceites y Lubricantes</span>
+                            </div>
+                            <div class="targeta">
+                                <div ><img src="./recursos de images/bujillaDeMoto.png" alt="imagen" class="imgProducto"></div>
+                                <span>Instalación de accesorios y repuestos</span>
+                            </div>
+                            <div class="targeta">
+                                <div ><img src="./recursos de images/filtros.png" alt="imagen" class="imgProducto"></div>
+                                <span>Filtros</span>
+                            </div>
+
+                        </div>
+
+                        
+                    </div>
+                </section>
+                <div class="modal-overlay" id="modalContactar">
+                    <div class="modal">
+                        <div class="tituloContactame">
+                            <h2>Ingrese su información</h2>
+                            <div>
+                                <button class="botonCerrar" onclick="cerrarModal()">X</button>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="info-personal">
+                                <div>
+
+                                    <div class="form">
+                                        <label for="name" class="lbl">
+                                            <span class="text-nomb">Nombre completo</span>
+                                        </label>
+                                        <input type="text" id="name" class="inputCo" name="name" required>
+        
+                                    </div>
+                                    <div class="form">
+                                        <label for="email" class="lbl-nombre">
+                                            <span class="text-nomb">Correo electrónico</span>
+                                        </label>
+                                        <input  id="email" type="email" name="email" class="inputCo"  required >
+                                        
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form">
+                                        <label for="name" class="lbl">
+                                            <span class="text-nomb">Teléfono</span>
+                                        </label>
+                                        <input type="text" id="telefonoID" class="inputCo" name="nuTelefono" required>
+        
+                                    </div>
+                                    <div class="form">
+                                        <label for="asunto" class="lbl-nombre">
+                                            <span class="text-nomb">Asunto</span>
+                                        </label>
+                                        <input  id="asuntoID" type="text" name="asunto" class="inputCo"  required >
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="form">
+                                <label for="email" class="lbl">
+                                            <span class="text-nomb">Mesaje</span>
+                                </label>
+                                <textarea id="message" class="mensaje" name="message" rows="4" required ></textarea>
+                                
+                            </div>
+
+
+                            <button type="button" class="btnEnviar" id="btnEnviar">Envia</button>
+                        
+
+                        </div>
+                    </div>
+                </div>
+                    
+            </main>
+        </div>
+    </div>
+
+    <script src="acciones.js" ></script>
+</body>
+</html>

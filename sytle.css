@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.layout{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap:3px;
+}
+
+.aside-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 19px;
+    position: sticky;
+    top: 0;
+    background: #e7e7e7af;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+.nav-link{
+    border: 2px solid rgb(228, 224, 224);
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    width: 20px;
+}
+
+.nav-link:hover{
+    background-color: rgba(50, 50, 255, 0.837);
+    color: white;
+}
+.inicio{
+    border: 3px solid ge;
+    flex: 1; /* Toma el 50% del ancho */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('./recursos de images/herramientas-de-taller-para-motos.jpg'); /* Pon aquí el nombre de tu archivo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 400px;
+    color: white;
+
+}
+.overlay-bienvenido {
+    position: absolute;
+    top: 12%; /* Ajusta la posición vertical según tus necesidades */
+    left: 1%;
+    width: 40%;
+    height: 25%;
+    /*background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según tus necesidades */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    
+}
+
+.txtBien{
+    font-size: 37px;
+    text-align: center;
+}
+
+.txtDescripcion{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+}
+.linea{
+    display: flex;
+    justify-content: pace-between;
+}
+
+.btn-contactar{
+    border:none ;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    color: rgb(251, 249, 249);
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: rgba(50, 50, 255, 0.551);
+    width: 200px;
+    cursor: pointer;
+}
+
+.services{
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    margin: 5%;
+    gap: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.txtServicios{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.targetasA{
+    display: flex;
+    
+}
+
+.targeta{
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 30px;
+    margin: 19px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    align-items: center;
+    width: 570px;
+}
+.targeta:hover{
+    transition: 1.3s;
+    width: 700px;
+    width: 700px;
+}
+
+.products{
+    margin: 5%;
+    gap: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgProducto{
+    width: 100%;
+    height: 100%;
+    border-radius: 9%;
+}
+
+.modal-overlay{
+  display: none;
+  position: fixed;             /* Se fija sobre todo el contenido */
+  inset: 0;                    /* top:0 right:0 bottom:0 left:0 → cubre toda la pantalla */
+  background: rgba(0,0,0,0.6); /* Fondo negro 60% de opacidad */
+  z-index: 1000;               /* Encima de todo lo demás */
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-overlay.activo{
+  display: flex;
+}
+
+.modal{
+  border-radius: 4%;
+  background: rgb(208, 207, 207);
+  width: 770px;
+  height: 460px;
+  max-width: 90vw;             /* En pantallas pequeñas no se sale */
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow: hidden;
+   align-items: center;
+ justify-content: center;
+}
+.modal-body{
+ display: flex;
+ flex-direction: column;
+ padding: 15px;
+ margin:10px;
+ /*border: 2px solid red;*/
+ gap:2vh;
+ width:90% ;
+ height: 1000%;
+ overflow: hidden;
+
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 60px;
+    max-width: 400px;
+    position: relative;
+    display: flex;
+
+}
+
+input{
+    border: 1px solid rgb(163, 163, 163);
+    background: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 2vh;
+    font-size: 2vh;
+}
+.info-personal{
+    display: flex;
+    gap:19px;
+}
+
+.mensaje{
+    border: 1px solid rgb(163, 163, 163);
+    background: none;
+    width: 65vh;
+    height: 200vh;
+    border-radius: 8px; 
+    font-size: 2vh;
+}
+
+.tituloContactame{
+    display: flex;
+    gap: 50vh;
+}
+
+.botonCerrar{
+    border: none;
+    background: none;
+    font-size: 2vh;
+    height: 4vh;
+    width: 4vh;
+}
+
+.botonCerrar:hover{
+    background: rgba(187, 186, 186, 0.886);
+}
+
+.btnEnviar{
+    background-color: rgba(28, 4, 213, 0.636);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 19px;
+}
