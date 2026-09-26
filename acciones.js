@@ -71,7 +71,7 @@ btnEnviar.addEventListener("click", function () {
     };
 
     
-    fetch("appservice-motorepapi-hibrid-hzfde3a9cnfmfaaq.mexicocentral-01.azurewebsites.net//api/Contactos", {
+    fetch("https://appservice-motorepapi-hibrid-hzfde3a9cnfmfaaq.mexicocentral-01.azurewebsites.net//api/Contactos", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
